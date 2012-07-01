@@ -11,7 +11,7 @@ After installation of the operating system and our selection of packages do the 
 
 2. initialize repo
 
-    \ gitkeeper init
+    \# gitkeeper init
     
 3. add remote
 
