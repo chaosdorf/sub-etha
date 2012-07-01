@@ -10,7 +10,7 @@
 		since this file is still processed in a single pass
 		from top-to-bottom -->
 
-<debug enable="1" />
+<debug enable="0" />
 
 		<!-- Volume definitions -->
 
