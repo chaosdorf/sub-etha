@@ -7,16 +7,16 @@ After installation of the operating system and our selection of packages do the 
 
 1. install gitkeeper
 
-    yaourt -S gitkeeper
+    \# yaourt -S gitkeeper
 
 2. initialize repo
 
-    gitkeeper init
+    \ gitkeeper init
     
 3. add remote
 
-    git remote add github git@github.com:/chaosdorf/sub-etha
+    \# git remote add github git@github.com:/chaosdorf/sub-etha
     
 4. pull configs
 
-    git pull github
+    \# git pull github
