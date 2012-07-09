@@ -10,7 +10,7 @@
 		since this file is still processed in a single pass
 		from top-to-bottom -->
 
-<debug enable="0" />
+<debug enable="1" />
 
 		<!-- Volume definitions -->
 
@@ -40,7 +40,9 @@
 
 <mkmountpoint enable="1" remove="true" />
 
-<volume user="hitchhiker" fstype="tmpfs" mountpoint="~" options="size=1G,uid=hitchhiker,gid=hitchhiker,mode=0700" />
-<volume user="traveller" path="/dev/sdb" fstype="crypt" mountpoint="~" options="fsck,noatime,uid=traveller,gid=traveller" />
+<volume user="hitchhiker" fstype="tmpfs" mountpoint="/home/hitchhiker.tmp" options="size=1G,uid=hitchhiker,gid=hitchhiker,mode=0700" />
+<volume user="hitchhiker" fstype="fuse" path="unionfs#/home/hitchhiker.tmp=RW:/home/base=RO" mountpoint="~" options="cow" />
+
+<volume user="traveller" path="/dev/sdb1" fstype="crypt" mountpoint="~" options="fsck,noatime,uid=traveller,gid=traveller" />
 
 </pam_mount>
